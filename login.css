@@ -1,0 +1,160 @@
+.center
+{
+	margin: auto;
+    width: 40%;
+}
+.header
+{
+    padding: 0.5em;
+    margin-left: 0px;
+    margin-right: 0px;
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+    clear: left;
+}
+.foot
+{
+    margin-top: 20px;
+    overflow:hidden;
+    background-color: rgba(0,0,0,0.7);
+}
+.footer
+{
+    position:absolute;
+	bottom:0;
+	right:0;
+    overflow:hidden;
+    background-color: rgba(0,0,0,0.7);
+}
+fieldset {   
+    border:none;
+  -moz-border-radius:10px;  
+  border-radius: 10px;  
+  -webkit-border-radius: 10px;
+}
+ul.menu {
+    margin-left:0px;
+    }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+.login-button:link, .login-button:visited {
+    -moz-border-radius:5px;  
+  border-radius: 5px;  
+  -webkit-border-radius: 5px;
+    display: block;
+    width: 115px;
+    color: #FFFFFF;
+    background-color: #1D314F;
+    text-align: center;
+    padding: 0px;
+    text-decoration: none;
+    text-transform: sentencecase;
+}
+.login-button:hover, .login-button:active {
+    background-color: #1D314F;
+}
+input
+{
+    padding: 5px;
+    border: solid 2px #c9c9c9;
+    border-radius:5px;
+    transition: border 0.3s;
+}
+.a-btn{
+    background:#34495e;
+    background:-webkit-gradient(linear,left top,left bottom,color-stop(#34495e,0),color-stop(#6f97c5,1));
+    background:-webkit-linear-gradient(top, #34495e 0%, #6f97c5 100%);
+    background:-moz-linear-gradient(top, #34495e 0%, #6f97c5 100%);
+    background:-o-linear-gradient(top, #34495e 0%, #6f97c5 100%);
+    background:linear-gradient(top, #34495e 0%, #6f97c5 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#34495e', endColorstr='#6f97c5',GradientType=0 );
+    height:38px;
+    width:115px;
+    display:inline-block;
+    position:absolute;
+    left:40%;
+    border:1px solid #5d81ab;
+    -webkit-box-shadow:0px 1px 1px rgba(255,255,255,0.8) inset, 1px 1px 3px rgba(0,0,0,0.2), 0px 0px 0px 4px rgba(188,188,188,0.5);
+    -moz-box-shadow:0px 1px 1px rgba(255,255,255,0.8) inset, 1px 1px 3px rgba(0,0,0,0.2), 0px 0px 0px 4px rgba(188,188,188,0.5);
+    box-shadow:0px 1px 1px rgba(255,255,255,0.8) inset, 1px 1px 3px rgba(0,0,0,0.2), 0px 0px 0px 4px rgba(188,188,188,0.5);
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    text-decoration: none;
+    float:left;
+    clear:both;
+    /*margin:0px 0px;*/
+    overflow:hidden;
+    -webkit-transition:all 0.3s linear;
+    -moz-transition:all 0.3s linear;
+    -o-transition:all 0.3s linear;
+    transition:all 0.3s linear;
+}
+.a-btn-text{
+    padding-top:10px;
+    padding-left: 10px;
+    display:block;
+    font-size:18px;
+    font-family: verdana;
+    white-space:nowrap;
+    text-shadow:0px 1px 1px rgba(255,255,255,0.3);
+    color:#000;
+    -webkit-transition:all 0.2s linear;
+    -moz-transition:all 0.2s linear;
+    -o-transition:all 0.2s linear;
+    transition:all 0.2s linear;
+}
+.a-btn-slide-text{
+    position:absolute;
+    height:100%;
+    top:0px;
+    right:0px;
+    width:0px;
+    background:#63707e;
+    text-shadow:0px -1px 1px #363f49;
+    color:#fff;
+    font-size:18px;
+    white-space:nowrap;
+    text-transform:uppercase;
+    text-align:left;
+    text-indent:10px;
+    overflow:hidden;
+    line-height:38px;
+    -webkit-box-shadow:-1px 0px 1px rgba(255,255,255,0.4), 1px 1px 2px rgba(0,0,0,0.2) inset;
+    -moz-box-shadow:-1px 0px 1px rgba(255,255,255,0.4), 1px 1px 2px rgba(0,0,0,0.2) inset;
+    box-shadow:-1px 0px 1px rgba(255,255,255,0.4), 1px 1px 2px rgba(0,0,0,0.2) inset;
+    -webkit-transition:width 0.3s linear;
+    -moz-transition:width 0.3s linear;
+    -o-transition:width 0.3s linear;
+    transition:width 0.3s linear;
+}
+.a-btn:hover{
+    padding-right:80px;
+    -webkit-box-shadow:0px 1px 1px rgba(255,255,255,0.8) inset, 1px 1px 3px rgba(0,0,0,0.2);
+    -moz-box-shadow:0px 1px 1px rgba(255,255,255,0.8) inset, 1px 1px 3px rgba(0,0,0,0.2);
+    box-shadow:0px 1px 1px rgba(255,255,255,0.8) inset, 1px 1px 3px rgba(0,0,0,0.2);
+}
+.a-btn:hover .a-btn-text{
+    text-shadow:0px 1px 1px #5d81ab;
+    color:#fff;
+}
+.a-btn:hover .a-btn-slide-text{
+    width:100px;
+}
+.a-btn:active{
+    position:absolute;
+    background:#5d81ab;
+    -webkit-box-shadow:1px 1px 2px rgba(0,0,0,0.4) inset;
+    -moz-box-shadow:1px 1px 2px rgba(0,0,0,0.4) inset;
+    box-shadow:1px 1px 2px rgba(0,0,0,0.4) inset;
+    border-color:#80a9da;
+}

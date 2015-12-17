@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+</head>
+<body>
+	<form action="registration.php" method="post">
+	<center>
+		<table border="2" cellspacing="2" width="35%" height="400" id="">
+                            <tr height="30" width="80%">
+                                <td width="50%" id="">
+                                	<label for="firstname">
+                                    	<i><b><p class="">First Name:</p></b></i>
+                                    </label>
+                                </td>
+                                <td width="50%">
+                                    <input type="text" id="" name="fname" required="" maxlength="20" pattern="^[a-zA-Z]+$" title="Example:siddhant">
+                                </td>
+                            </tr>
+                            <tr height="30" width="80%">
+                                <td width="50%" id="">
+                                	<label for="lastname">
+                                    	<i><b><p class="">Last Name:</p></b></i>
+                                    </label>
+                                </td>
+                                <td width="50%">
+                                    <input type="text" id="" name="lname" required="" maxlength="20" pattern="^[a-zA-Z]+$" title="Example:sharma">
+                                </td>
+                            </tr>
+                            <tr height="30" width="80%" >
+                                <td width="50%" id="">
+                                	<label for="college id">
+                                    	<i><b><p class="">College Id:</p></b></i></td>
+                                    </label>
+                                <td width="50%">
+                                    <input type="text" id="" name="regno" required="" maxlength="20" pattern="^[a-zA-Z0-9]{8,15}" title="Example:1031310418">
+                                    <span id="msg"></span>
+                                </td>
+                            </tr>
+                            <tr height="30" width="80%">
+                                <td width="50%" id="">
+                                	<label for="email">
+                                    	<i><b><p class="">Email:</p></b></i></td>
+                                    </label>
+                                <td width="50%">
+                                    <input type="email" name="email" id="" required="" maxlength="30" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
+                                </td>
+                            </tr>
+                            <tr height="30" width="80%">
+                                <td width="50%" id="">
+                                <label for="mobile number">
+                                    	<i><b><p class="">Mobile No.:</p></b></i>
+                                </label>
+                                </td>
+                                <td width="50%">
+                                    <input type="text" name="mobile" id="" required="" pattern="^[0-9]{10}$" maxlength="10">
+                                </td>
+                            </tr>
+                            <tr height="30" width="80%">
+                                <td width="50%" id="">
+                                <label for="gender">
+                                    <i><b><p class="">Gender:</p></b></i>
+                                 </label>
+                                </td>
+                                <td width="50%">
+                                    <b>Male<input type="radio" name="gen" value="male" id="" required="" maxlength="6"></b>
+                                    <b>Female<input type="radio" name="gen" value="female" id="" required="" maxlength="6"></b>
+                                </td>
+                            </tr>
+                            <tr height="30" width="80%" >
+                                <td width="50%" id="">
+                                	<label for="Department">
+                                    	<i><b><p class="">Dept:</p></b></i>
+                                    </label>
+                                </td>
+                                <td width="50%">
+                                    <input type="text" name="dept" id="" required="" maxlength="10" pattern="^[a-zA-Z]+$">
+                                </td>
+                            </tr>
+                            <tr height="30" width="80%" >
+                                <td width="50%" id="">
+                                	<label for="year">
+                                           <i><b><p class="">Year:</p></b></i>
+                                    </label>
+                                </td>
+                                <td width="50%">
+                                    <select required="" name="year" id="" required="">
+                             				<option>select</option>
+                            				<option>1</option>
+                            				<option>2</option>
+                            				<option>3</option>
+                            				<option>4</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr height="80" width="80%">
+                                <td width="50%" id="">
+                                	<label for="position">
+                                    	<i><b><p class="">Apply for:</p></b></i>
+                                    </label>
+                                </td>
+                                <td width="50%"><br>
+                                    <b><input type="checkbox" name="applywdev" value="developer" id="" />Web Developer</b><br>
+                                    <b><input type="checkbox" name="applywd" value="wdesigner" id="" />Web Designing</b><br>
+                                    <b><input type="checkbox" name="applygd" value="gdesigner" id="" />Graphic Designing</b><br>
+                                    <b><input type="checkbox" name="applyv" value="vfx" id="" />Vfx</b><br>
+                                    <b><input type="checkbox" name="applya" value="app" id="" />App Development</b>
+                                </td>
+                            </tr>
+                            <tr height="80" width="80%">
+                                <td width="50%" id="">
+                                	<label for="position">
+                                    	<i><b><p class="">How do you know about WebArch:</p></b></i>
+                                    </label>
+                                </td>
+                                <td width="50%"><br>
+                                    <textarea required="" minimum="30" maximum="100" name="knowweb"></textarea>
+                                </td>
+                            </tr>
+                            <tr height="80" width="80%">
+                                <td width="50%" id="">
+                                	<label for="position">
+                                    	<i><b><p class="">Why do you want to join WebArch:</p></b></i>
+                                    </label>
+                                </td>
+                                <td width="50%"><br>
+                                    <textarea required="" minimum="30" maximum="100" name="joinweb"></textarea>
+                                </td>
+                            </tr>
+                            <tr height="80" width="80%">
+                                <td width="50%" id="">
+                                	<label for="position">
+                                    	<i><b><p class="">What do you except from WebArch:</p></b></i>
+                                    </label>
+                                </td>
+                                <td width="50%"><br>
+                                    <textarea required="" minimum="30" maximum="100" name="exceptweb"></textarea>
+                                </td>
+                            </tr>
+                            <tr height="80px">
+                                <td colspan="2" width="100%">
+                                	<center>
+                                		<input type="submit" value="Register">
+                                	</center>
+                                </td>
+                            </tr>
+                         </center>
+                     </table>
+	</center>
+	</form>
+</body>
+</html>

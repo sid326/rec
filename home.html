@@ -1,0 +1,135 @@
+<html>
+<head>
+ <link href="bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<link href="homepage.css" rel='stylesheet' type='text/css' />  
+<link rel="stylesheet" href="compiled/flipclock.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="compiled/flipclock.js"></script>
+<script src="js/jquery-1.11.1.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,900' rel='stylesheet' type='text/css'>
+	<title></title>
+
+</head>
+<body style="overflow-x:hidden;background:fixed;margin:0;">
+     <div class="header">
+         <a href="http://www.srmuniv.ac.in"><img src="images/logo.jpg" width="60px" height="60px" style="float:left;position:absolute;top:10px;left:10px;"></a>
+        <h3 class="tittle">Webarch Recruitment</h3>
+         <a href="http://www.webarchsrm.com"><img src="images/_walogo.jpg" width="60px" height="60px" style="position:absolute;right:10px;top:10px;"></a>
+        <font face="verdana" size="4"><a href="registration.php" class="top">Register</a></font>
+      </div>
+      <table style="background-color:black;width:100%;background-image:url('rec.jpg');background-size:cover; height:540px;">
+          <tr>
+              
+              <td><h3 style="color:#1D314F;margin-left:28%;margin-bottom:35px;text-shadow:1px 1px #000;">Helping Achievers Soar. Recruiting soon...</h3>
+              <center>
+                <div class="clock" style="width:46%;"></div>
+              </center>
+              </td>
+          </tr>
+      </table>
+      
+        
+        <script type="text/javascript">
+            var clock;
+
+            $(document).ready(function() {
+
+                // Grab the current date
+                var currentDate = new Date();
+                //alert(currentDate);
+                // Set some date in the future. In this case, it's always Jan 1
+                var futureDate  = new Date(currentDate.getFullYear() + 1, 0, 10);
+                alert(futureDate);
+                // Calculate the difference in seconds between the future and current date
+                var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+
+                // Instantiate a coutdown FlipClock
+                clock = $('.clock').FlipClock(diff, {
+                    clockFace: 'DailyCounter',
+                    countdown: true
+                });
+            });
+        </script>
+  <div id="bg-asset"></div>
+   <center> <div id="captioned-gallery">
+    <figure class="slider">
+        <figure>
+            <img src="img/s2.png" alt>
+            <figcaption>Insert some caption here</figcaption>
+        </figure>
+        <figure>
+            <img src="img/s1.jpg" alt>
+            <figcaption>Insert some caption here</figcaption>
+        </figure>
+        <figure>
+            <img src="img/s3.jpg" alt>
+            <figcaption>Insert some caption here</figcaption>
+        </figure>
+        <figure>
+            <img src="img/s4" alt>
+            <figcaption>Insert some caption here</figcaption>
+        </figure>
+        <figure>
+            <img src="" alt>
+            <figcaption>Insert some caption here</figcaption>
+        </figure>
+    </figure>
+</div></center>
+<div class="gallery" id="gallery">
+            <div class="gallery-bottom">
+             <div class="view view-fifth" style="background-image:url('wb.jpg');background-size:cover">
+                    <a href="" class=""  title="web designing" style="text-decoration:none">
+                        <div class="mask">
+                            <h2>Web Designing</h2>
+                            <p>Some text. Some text. Some text. Some text Some text Some text Some text Some text Some text Some text Some text Some text</p>
+                            <a href="#" class="info">Start Test</a>
+                        </div>
+                    </a>
+                </div>
+                <div class="view view-fifth"style="background-image:url('open.png');background-size:cover;">
+                   <a href="" class=""  title="web development" style="text-decoration:none">
+                        <div class="mask">
+                            <h2>Web development</h2>
+                            <p>Some text. Some text. Some text. Some text Some text Some text Some text Some text Some text Some text Some text Some text</p>
+                            <a href="#" class="info">Start Test</a>
+                        </div>
+                    </a>
+                </div>
+                <div class="view view-fifth" style="background-image:url('and.jpg');background-size:cover">
+                    <a href="" class=""  title="app development" style="text-decoration:none">
+                        <div class="mask">
+                            <h2>App Development</h2>
+                            <p>Some text. Some text. Some text. Some text Some text Some text Some text Some text Some text Some text Some text Some text.</p>
+                            <a href="#" class="info">Start Test</a>
+                        </div>
+                    </a>
+                </div>
+                <div class="view view-fifth" style="background-image:url('vfx.png');background-size:cover">
+                   <a href="" class=""  title="VFX" style="text-decoration:none">
+                        <div class="mask">
+                            <h2>Visual Effects</h2>
+                            <p>Some text. Some text. Some text. Some text Some text Some text Some text Some text Some text Some text Some text Some text</p>
+                            <a href="#" class="info">Start Test</a>
+                        </div>
+                    </a>
+                </div>
+                 <div class="view view-fifth" style="background-image:url('gd.png');background-size:cover">
+                    <a href="" class=""  title="Graphics designing" style="text-decoration:none">
+                        <div class="mask">
+                            <h2>Graphics Designing</h2>
+                            <p>Some text. Some text. Some text. Some text Some text Some text Some text Some text Some text Some text Some text Some text.</p>
+                            <a href="#" class="info">Start Test</a>
+                        </div>
+                    </a>
+                </div>
+         <div class="clearfix"> </div>
+            </div>
+        </div>
+        
+	<div class="footer">
+    <a href="http://webarchsrm.com"><img src="webarch.png" width="180px" height="40px" style="float:right"></img></a>
+       <!-- <div style="float:right;backround-image:url('webarch.png');"></div>-->
+    </div>
+</body>
+</html>

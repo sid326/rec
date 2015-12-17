@@ -1,0 +1,177 @@
+body
+{
+	overflow-x:hidden;
+	background-image: url('triangular/triangular.png');
+}
+.container
+{
+	width:100%;
+}
+.header
+{
+    padding: 0.5em;
+    margin-left: 0px;
+    margin-right: 0px;
+    color: white;
+    background-color: #45ca58;
+    clear: left;
+    text-align: center;
+}
+.footer
+{
+	background-color: #45ca58;
+	overflow: hidden;
+}
+.footer img
+{
+	float:right;
+}
+.core-cards
+{	
+	list-style-type:none;
+	display:inline-block;
+	margin-top: 40px;
+}
+.core-cards li
+{
+	width:26%;
+	height:340px;
+	float:left;
+	position:relative;
+	overflow:hidden;
+	margin-bottom:60px!important;
+	-webkit-transition:all 0.3s ease-in-out 0.1s;
+	-moz-transition:all 0.3s ease-in-out 0.1s;
+	transition:all 0.3s ease-in-out 0.1s;
+}
+.core-cards li:nth-child(2),.core-cards li:nth-child(5),.core-cards li:nth-child(8)
+{
+	margin:0 5%;
+}
+@media only screen and (max-width: 992px) 
+{.core-cards li{width:45%;
+}
+.core-cards li:nth-child(2),.core-cards li:nth-child(5),.core-cards li:nth-child(8)
+{
+	margin:0;
+}
+.core-cards li:nth-child(odd)
+{margin-right:10%;}}@media only screen and (max-width: 767px) {.core-cards li{width:100%;margin-right:0;margin-left:0;height:260px;}}
+.core-cards a
+{
+	float:left;
+	width:100%;
+	height:100%;
+	padding:50px 30px;
+	text-decoration: none;
+}
+.core-cards a *
+{-webkit-transition:all 0.3s ease-in-out 0.1s;
+	-moz-transition:all 0.3s ease-in-out 0.1s;
+	transition:all 0.3s ease-in-out 0.1s;
+	position:relative;
+	z-index:1;
+}
+.core-cards a#card-ui h3
+{
+	padding-right:20px;
+}
+.core-cards a .bg-img
+{
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	position:absolute;
+	background-size:cover;
+	background-position:top center;
+	opacity:0;z-index:0;
+}
+.core-cards a .bg-img:before
+{
+	content:"";
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	position:absolute;
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.6);
+	}
+}@media only screen and (max-width: 1200px) {.core-cards a p{font-size:16px;font-size:1.6rem;}}@media only screen and (max-width: 992px) {.core-cards a p{font-size:16px;font-size:1.6rem;}}@media only screen and (max-width: 767px) {.core-cards a{padding:30px 30px;}}
+.core-cards a .border
+{
+	position:absolute;
+	z-index:0;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:8px;
+	background-color:#45ca58;
+}
+.core-cards a:before
+{
+	position:absolute;
+	display:inline-block;
+	content:"";
+	background:#ffffff;
+	width:40px;
+	height:2px;
+	left:-50px;
+	bottom:0;
+	margin-bottom:20px;
+	z-index:1;
+	opacity:0;
+	-webkit-transition:all 0.3s ease-in-out 0s;
+	-moz-transition:all 0.3s ease-in-out 0s;
+	transition:all 0.3s ease-in-out 0s;
+}
+.core-cards a:after
+{
+	position:absolute;
+	display:inline-block;
+	content:"";
+	width:10px;
+	height:10px;
+	color:#ffffff;
+	border-top:2px solid;
+	border-left:2px solid;
+	-webkit-transform:rotate(135deg);
+	-moz-transform:rotate(135deg);
+	-ms-transform:rotate(135deg);
+	-o-transform:rotate(135deg);
+	transform:rotate(135deg);
+	bottom:0;
+	left:-20px;
+	margin-bottom:16px;
+	z-index:1;
+	opacity:0;
+	-webkit-transition:all 0.3s ease-in-out 0s;
+	-moz-transition:all 0.3s ease-in-out 0s;
+	transition:all 0.3s ease-in-out 0s;
+}
+.core-cards a:hover .bg-img
+{opacity:1;}
+.core-cards a:hover h3
+{color:#ffffff;}
+.core-cards a:hover p
+{color:#f5f6f7;}
+.core-cards a:hover .border
+{height:40px;}
+.core-cards a:hover:before
+{
+	left:30px;
+	opacity:1;
+	-webkit-transition:all 0.3s ease-in-out 0.3s;
+	-moz-transition:all 0.3s ease-in-out 0.3s;
+	transition:all 0.3s ease-in-out 0.3s;
+}
+.core-cards a:hover:after
+{
+	left:60px;
+	opacity:1;
+	-webkit-transition:all 0.3s ease-in-out 0.3s;
+	-moz-transition:all 0.3s ease-in-out 0.3s;
+	transition:all 0.3s ease-in-out 0.3s;
+}

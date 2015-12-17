@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="reg.css">
+<head>
+
+	<title>Registraion form</title>
+	<script type="text/javascript">
+var XMLHttpRequestObject =false;
+if(window.XMLHttpRequest)
+{
+//alert("gh");
+XMLHttpRequestObject=new XMLHttpRequest();
+}
+else if(window.ActiveXObject)
+{
+XMLHttpRequestObject=new ActiveXObject("Microsoft.XMLHTTP");
+}
+
+function getData(divID1,divID2,divID3,divID4)
+{
+alert("123gh");
+var txt1=document.getElementById("txt1");
+var txt2=document.getElementById("txt2");
+var txt3=document.getElementById("txt3");
+var txt4=document.getElementById("txt4");
+var txt5=document.getElementById("txt5");
+var txt6=document.getElementById("txt6");
+var txt7=document.getElementById("txt7");
+var txt8=document.getElementById("txt8");
+var txt9=document.getElementById("txt9");
+var txt10=document.getElementById("txt10");
+var txt11=document.getElementById("txt11");
+var txt12=document.getElementById("txt12");
+var txt13=document.getElementById("txt13");
+var txt14=document.getElementById("txt14");
+var txt15=document.getElementById("txt15");
+var txt16=document.getElementById("txt16");
+var txt17=document.getElementById("txt17");
+var txt18=document.getElementById("txt18");
+if(XMLHttpRequestObject)
+{
+//alert("hi");
+var obj1=document.getElementById(divID1);
+var obj2=document.getElementById(divID2);
+var obj3=document.getElementById(divID3);
+var obj4=document.getElementById(divID4);
+XMLHttpRequestObject.open("GET","registration.php?qu="+txt3.value+"&su="+txt4.value+"&ru="+txt7.value+"&lu="+txt6.value+"&fname="+txt1.value+"&lname="+txt2.value+"&password="+txt5.value+"&gen="+txt8.value+"&dept="+txt9.value+"&year="+txt10.value+"&applywdev="+txt11.value+"&applywd="+txt12.value+"&applygd="+txt13.value+"&applyv="+txt14.value+"&applya="+txt15.value+"&knowweb="+txt16.value+"&joinweb="+txt17.value+"&exceptweb="+txt18.value);
+XMLHttpRequestObject.onreadystatechange=function()
+{
+if(XMLHttpRequestObject.readyState==4 && XMLHttpRequestObject.status==200)
+{
+var temp=XMLHttpRequestObject.responseText;
+//alert(temp);
+if(temp.trim()=='a')
+{
+//alert(temp);
+obj1.innerHTML="<img align='left' src='Capture.JPG' alt='Smiley face' width='12' height='12'>";
+
+//alert(temp);
+//obj.innerHTML=temp;
+
+}
+else
+{
+obj1.innerHTML=" ";
+}
+if(temp.trim()=='b')
+{
+//alert(temp);
+obj2.innerHTML="<img align='left' src='Capture.JPG' alt='Smiley face' width='12' height='12'>";
+//alert(temp);
+//obj.innerHTML=temp;
+
+}
+else
+{
+obj2.innerHTML=" ";
+}
+if(temp.trim()=='c')
+{
+//alert(temp);
+obj3.innerHTML="<img align='left' src='Capture.JPG' alt='Smiley face' width='12' height='12'>";
+//alert(temp);
+//obj.innerHTML=temp;
+
+}
+else
+{
+obj3.innerHTML=" ";
+}
+if(temp.trim()=='d')
+{
+//alert(temp);
+obj4.innerHTML="<img align='left' src='Capture.JPG' alt='Smiley face' width='12' height='12'>";
+//alert(temp);
+//obj.innerHTML=temp;
+
+}
+else
+{
+obj4.innerHTML=" ";
+}
+if(temp.trim()=='e')
+{
+alert("registration succesful verification link is sent to your mail id you will be redirected to login page now ");
+window.location="http://localhost:60/login_oop/login1.html";
+}
+
+}
+
+
+}
+XMLHttpRequestObject.send(null);
+
+}
+
+}
+
+    </script>
+</head>
+<body style="background-color:#008080">
+    <div class="header">
+        <ul class="menu">
+        <li><font face="verdana" size="4">Already registered?&nbsp &nbsp </font></li><li><font face="verdana" size="4"><a href="login.html">Login</a></font></li>
+        </ul>
+    </div><br>
+	<form >
+	<center> <fieldset style="background-color:#f1f1f1;width:700px">
+		<table cellspacing="2" width="50%" height="400" id="tab">
+            
+                            <tr height="30" width="80%">
+                                <td width="50%" id="">
+                                	<label for="firstname">
+                                    	<i><b><p class="">First Name:</p></b></i>
+                                    </label>
+                                </td>
+                                <td width="50%">
+                                    <input type="text" id="txt1" name="fname" required="" maxlength="20" pattern="^[a-zA-Z]+$" title="Example:siddhant" placeHolder="First name">
+                                </td>
+                            </tr>
+                            <tr height="30" width="80%">
+                                <td width="50%" id="">
+                                	<label for="lastname">
+                                    	<i><b><p class="">Last Name:</p></b></i>
+                                    </label>
+                                </td>
+                                <td width="50%">
+                                    <input type="text" id="txt2" name="lname" required="" maxlength="20" pattern="^[a-zA-Z]+$" title="Example:sharma" placeHolder="Last name">
+                                </td>
+                            </tr>
+                            <tr height="30" width="80%" >
+                                <td width="50%" id="">
+                                	<label for="college id">
+                                    	<i><b><p class="">College Id:</p></b></i></td>
+                                    </label>
+                                <td width="50%">
+                                    <input type="text" id="txt3" name="regno" required="" maxlength="20" pattern="^[a-zA-Z0-9]{8,15}" title="Example:1031310418" placeHolder="College Id">
+                                    <span id="msg"></span>
+                                </td>
+								<td><div id="targetDiv1">
+<h4> </h4>
+</div></td>
+                            </tr>
+							 <tr height="30" width="80%" >
+                                <td width="50%" id="">
+                                	<label for="college id">
+                                    	<i><b><p class="">user id </p></b></i></td>
+                                    </label>
+                                <td width="50%">
+                                    <input type="text" id="txt4" name="user_id" required="" maxlength="13" pattern="^[a-zA-Z0-9]{8,15}" title="Example:1031310418" placeHolder="User id">
+                                    <span id="msg"></span>
+                                </td>
+								<td><div id="targetDiv2">
+<h4> </h4>
+</div></td>
+                            </tr>
+							 <tr height="30" width="80%" >
+                                <td width="50%" id="">
+                                	<label for="password">
+                                    	<i><b><p class="">Password</p></b></i></td>
+                                    </label>
+                                <td width="50%">
+                                    <input type="password" id="txt5" name="password" required="" maxlength="13" pattern="^[a-zA-Z0-9]{8,15}" title="Example:1031310418" placeHolder="password">
+                                    <span id="msg"></span>
+                                </td>
+                            </tr>
+                            <tr height="30" width="80%">
+                                <td width="50%" id="">
+                                	<label for="email">
+                                    	<i><b><p class="">Email:</p></b></i></td>
+                                    </label>
+                                <td width="50%">
+                                    <input type="email" name="email" id="txt6" required="" maxlength="30" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeHolder="Email"/>
+                                </td>
+																								<td><div id="targetDiv4">
+<h4> </h4>
+</div></td>
+                            </tr>
+                            <tr height="30" width="80%">
+                                <td width="50%" id="">
+                                <label for="mobile number">
+                                    	<i><b><p class="">Mobile No.:</p></b></i>
+                                </label>
+                                </td>
+                                <td width="50%">
+                                    <input type="text" name="mobile" id="txt7" required="" pattern="^[0-9]{10}$" maxlength="10" placeHolder="Mobile No">
+                                </td>
+																<td><div id="targetDiv3">
+<h4> </h4>
+</div></td>
+                            </tr>
+                            <tr height="30" width="80%">
+                                <td width="50%" id="">
+                                <label for="gender">
+                                    <i><b><p class="">Gender:</p></b></i>
+                               </label>
+                                </td>
+                                <td width="50%">
+                                    <b>Male<input type="radio" name="gen" value="male" id="txt8" required="" maxlength="6"></b>
+                                    <b>Female<input type="radio" name="gen" value="female" id="txt8" required="" maxlength="6"></b>
+                                </td>
+                            </tr>
+                            <tr height="30" width="80%" >
+                                <td width="50%" id="">
+                                	<label for="Department">
+                                    	<i><b><p class="">Dept:</p></b></i>
+                                    </label>
+                                </td>
+                                <td width="50%">
+                                    <input type="text" name="dept" id="txt9" required="" maxlength="10" pattern="^[a-zA-Z]+$" placeHolder="Department">
+                                </td>
+                            </tr>
+                            <tr height="30" width="80%" >
+                                <td width="50%" id="">
+                                	<label for="year">
+                                           <i><b><p class="">Year:</p></b></i>
+                                    </label>
+                                </td>
+                                <td width="50%">
+                                    <select required="" name="year" id="txt10" required="">
+                             				<option>select</option>
+                            				<option>1</option>
+                            				<option>2</option>
+                            				<option>3</option>
+                            				<option>4</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr height="80" width="80%">
+                                <td width="50%" id="">
+                                	<label for="position">
+                                    	<i><b><p class="">Apply for:</p></b></i>
+                                    </label>
+                                </td>
+                                <td width="50%"><br>
+                                    <b><input  type="checkbox" name="applywdev" value="developer" id="txt11" />Web Developer</b><br>
+                                    <b><input type="checkbox" name="applywd" value="wdesigner" id="txt12" />Web Designing</b><br>
+                                    <b><input type="checkbox" name="applygd" value="gdesigner" id="txt13" />Graphic Designing</b><br>
+                                    <b><input type="checkbox" name="applyv" value="vfx" id="txt14"/>Vfx</b><br>
+                                    <b><input type="checkbox" name="applya" value="app" id="txt15"/>App Development</b>
+                                </td>
+                            </tr>
+                            <tr height="80" width="80%">
+                                <td width="50%" id="">
+                                	<label for="position">
+                                    	<i><b><p class="">How do you know about WebArch:</p></b></i>
+                                    </label>
+                                </td>
+                                <td width="50%"><br>
+                                    <textarea id="txt16" required="" minimum="30" maximum="100" name="knowweb"></textarea>
+                                </td>
+                            </tr>
+                            <tr height="80" width="80%">
+                                <td width="50%" id="">
+                                	<label for="position">
+                                    	<i><b><p class="">Why do you want to join WebArch:</p></b></i>
+                                    </label>
+                                </td>
+                                <td width="50%"><br>
+                                    <textarea id="txt17" required="" minimum="30" maximum="100" name="joinweb"></textarea>
+                                </td>
+                            </tr>
+                            <tr height="80" width="80%">
+                                <td width="50%" id="">
+                                	<label for="position">
+                                    	<i><b><p class="">What do you expect from WebArch:</p></b></i>
+                                    </label>
+                                </td>
+                                <td width="50%"><br>
+                                    <textarea  id="txt18" required="" minimum="30" maximum="100" name="exceptweb"></textarea>
+                                </td>
+                            </tr>
+                            <tr height="80px">
+                                <td colspan="2" width="100%">
+                                	<center>
+                                		<input type="button"  value="click here" onclick="getData('targetDiv1','targetDiv2','targetDiv3','targetDiv4');"/>
+										
+                                	</center>
+                                </td>
+                            </tr>
+                         </center>
+                     </table></fieldset>
+	</center>
+	</form>
+    <div class="footer">
+        <a href="http://www.webarchsrm.com/"><img src="_wapower.png" width="150px" height="30px"></img></a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<html>
+  <head>
+  <style>
+
+  img{
+  padding-left:0px;
+  }
+  
+  </style>
+     <title> welcome to Linkzone</title>
+	 
+	         <script type="text/javascript">
+var XMLHttpRequestObject =false;
+if(window.XMLHttpRequest)
+{
+//alert("gh");
+XMLHttpRequestObject=new XMLHttpRequest();
+}
+else if(window.ActiveXObject)
+{
+XMLHttpRequestObject=new ActiveXObject("Microsoft.XMLHTTP");
+}
+
+function getData(divID1,divID2,divID3)
+{
+var txt1=document.getElementById("txt1");
+var txt2=document.getElementById("txt2");
+var txt3=document.getElementById("txt3");
+if(XMLHttpRequestObject)
+{
+//alert("hi");
+var obj1=document.getElementById(divID1);
+var obj2=document.getElementById(divID2);
+var obj3=document.getElementById(divID3);
+XMLHttpRequestObject.open("GET","index.php?qu="+txt1.value+"&su="+txt2.value+"&ru="+txt3.value);
+XMLHttpRequestObject.onreadystatechange=function()
+{
+if(XMLHttpRequestObject.readyState==4 && XMLHttpRequestObject.status==200)
+{
+var temp=XMLHttpRequestObject.responseText;
+if(temp.trim()=='log')
+{
+window.location="http://localhost:60/login_oop/skill.php";
+//alert(temp);
+//obj.innerHTML=temp;
+}
+else if(temp.trim()=='nolog')
+{
+obj1.innerHTML="<img align='left' src='Capture.JPG' alt='Smiley face'width='12' height='12'>";
+obj3.innerHTML="<img align='left' src='Capture.JPG' alt='Smiley face'width='12' height='12'>";
+}
+else if(temp.trim()=='capatcha')
+{
+obj2.innerHTML="<img align='left' src='Capture.JPG' alt='Smiley face'width='22' height=22'>";
+}
+
+}
+}
+XMLHttpRequestObject.send(null);
+}
+}
+//-->
+    </script>
+  </head>
+     <body  >
+	 <center>
+				<h1><font color="white"></font></h1>
+				<b>LOG IN </b>
+				<h1> <form >
+   
+   <table cellspacing="10" cellpadding="2" border="0">
+ 
+ <tr>
+   <td align="right"><font color="black"><b>User_id</b></font></td>
+   <td><input type="text" id='txt1'/></td>
+ <td>
+ <div id="targetDiv1">
+<h4> </h4>
+</div>
+</td>
+ </tr>
+ 
+ <tr>
+   <td align="right"><font color="black"><b>Password</b></font></td>
+   <td><input type="password" id='txt2' /></td>
+   <td><div id="targetDiv3">
+<h4> </h4>
+</div></td>
+ </tr>
+  
+   <tr>
+   <td align="right"><font color="black"><b>Capatcha</b></font></td>
+   <td><input type="text" id='txt3'> </td> <td><image src="image1.php"><br/></td>
+   <td> <div id="targetDiv2">
+<h4> </h4>
+</div></td>
+ </tr>
+  
+<tr >
+<td align ="center" colspan="2" ><b><input type="button"  value="click here" onclick="getData('targetDiv1','targetDiv2','targetDiv3')" /></b></td>
+</tr>
+ </table>
+</form>
+</center>
+
+
+
+	 </body>
+</html>
